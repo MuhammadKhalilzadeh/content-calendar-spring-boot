@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/content
+
+### A POST Request
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+    "id": 2,
+    "title": "My Second Test Content Object",
+    "desc": "This is the second test object",
+    "status": "COMPLETE",
+    "contentType": "ARTICLE",
+    "dateCreated": null,
+    "dateUpdated": null,
+    "url": ""
+  }
+
+
+### A PUT Request
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "My Updated First Test Content Object",
+    "desc": "This is the updated first test object",
+    "status": "COMPLETE",
+    "contentType": "ARTICLE",
+    "dateCreated": null,
+    "dateUpdated": null,
+    "url": ""
+  }
+
+### DELETE Request
+DELETE http://localhost:8080/api/content/2
